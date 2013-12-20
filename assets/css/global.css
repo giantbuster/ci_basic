@@ -85,3 +85,7 @@ input[type=submit]{
 	padding: 5px;
 }
 
+.errors{
+	text-align: left;
+	color: #D12C51;
+}

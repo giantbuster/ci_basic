@@ -43,7 +43,6 @@ class Home extends CI_Controller {
 		$this->load->library('form_validation');
 
 		$this->form_validation->set_rules('login_email', 'Email', 'required|callback_validate_credentials');
-		$this->form_validation->set_rules('login_password', 'Password', 'md5');
 
 		if ($this->form_validation->run() == FALSE){
 			$data['login_error'] = validation_errors();
